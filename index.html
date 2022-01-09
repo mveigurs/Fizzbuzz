@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='script.js' defer></script>
+</head>
+<body>
+        <h1>Have some fun with FizzBuzz!</h1>
+    <main>
+        <div>
+        <h2>Enter numbers, press generate, and see what happens:</h2>
+        <section class="values">
+            <label>Min number (1-100):</label>
+            <input type ="text" id="minimum" name="number" onpaste="return false"> 
+        </section>
+        <section class="values">
+            <label>Max number (1-100):</label>
+            <input type ="text" id="maximum" name="number" onpaste="return false">
+        </section>
+        <hr>
+        <section class="types">
+            <button id="generate" type="button" name="button" onclick="generate()">Generate</button>
+            <button id="fizzbutton" type="button" name="button" onclick="fizz()">Fizz</button>
+            <button id="buzzbutton" type="button" name="button" onclick="buzz()">Buzz</button>
+            <button id="fizzbuzzbutton" type="button" name="button" onclick="fizzbuzz()">FizzBuzz</button>
+            <button id="resetbutton" type="button" name="button" onclick="reset()">Reset</button>
+            <button id="clearbutton" type="button" name="button">Clear</button>
+        </section>
+        </div>
+        <hr>
+        <div id="element">
+        
+        </div>
+    </main>
+</body>
+</html>
